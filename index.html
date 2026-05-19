@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Playground | Prácticas de JS</title>
+    <link rel="shortcut icon" href="/public/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>DOM Playground</h1>
+            <p>Laboratorio para dominar la manipulación del Document Object Model.</p>
+        </header>
+
+        <section class="grid">
+            <!-- 1. Eventos y Texto -->
+            <div class="card" id="counter-section">
+                <h2>Contador Interactivos</h2>
+                <p class="description">Practica <code>addEventListener</code> y <code>innerText</code>.</p>
+                <div class="display" id="counter-display">0</div>
+                <div class="controls">
+                    <button id="decrement">-</button>
+                    <button id="reset">Reset</button>
+                    <button id="increment">+</button>
+                </div>
+            </div>
+
+            <!-- 2. Creación de Elementos -->
+            <div class="card" id="list-section">
+                <h2>Gestión de Listas</h2>
+                <p class="description">Usa <code>createElement</code> y <code>appendChild</code>.</p>
+                <div class="input-group">
+                    <input type="text" id="item-input" placeholder="Nueva tarea...">
+                    <button id="add-item">Añadir</button>
+                </div>
+                <ul id="dynamic-list" class="list">
+                    <!-- Los items se añadirán aquí -->
+                </ul>
+            </div>
+
+            <!-- 3. Clases y Estilos -->
+            <div class="card" id="style-section">
+                <h2>Modo Oscuro & Clases</h2>
+                <p class="description">Práctica <code>classList.toggle</code> y estilos inline.</p>
+                <div class="controls">
+                    <button id="toggle-dark">Modo Oscuro</button>
+                </div>
+            </div>
+
+            <!-- 4. Formularios y Atributos -->
+            <div class="card" id="form-section">
+                <h2>Inputs en Vivo</h2>
+                <p class="description">Escucha eventos <code>input</code> y cambia atributos.</p>
+                <div class="form-group">
+                    <label for="name-input">Nombre:</label>
+                    <input type="text" id="name-input" placeholder="Escribe algo...">
+                </div>
+                <p id="name-display">Hola, <span id="user-name">Invitado</span>!</p>
+                <img id="profile-img" src="https://ui-avatars.com/api/?name=JS&background=random" alt="Profile" class="avatar">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Hecho con ❤️ para aprender JavaScript</p>
+        </footer>
+    </main>
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
